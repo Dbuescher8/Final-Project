@@ -1,4 +1,4 @@
-function buildPlot(id) {
+function buildPlot(id,bardivid,scatterdivid) {
     d3.json("/api/v1.0/" + id).then((importedData) => {
         var data = importedData;
 
@@ -29,7 +29,7 @@ function buildPlot(id) {
         width: 1200
         };
     
-        Plotly.newPlot("bar", chartData, layout);
+        Plotly.newPlot(bardivid, chartData, layout);
 
         var data2 = importedData;
         data2.sort(function(a, b) {
@@ -55,23 +55,24 @@ function buildPlot(id) {
             height: 600,
             width: 1200
         };
-        Plotly.newPlot("scatter",chartData2,layout2);
+        Plotly.newPlot(scatterdivid,chartData2,layout2);
   });
 }
 
-function plotInfo(id) {
+function plotInfo(id,divmetadata) {
     d3.json("/api/v1.0/" + id).then((importedData)=> {
         var data = importedData;
         data.sort(function(a, b) {
             return parseFloat(b.name) - parseFloat(a.name);
             });
 
-        var pokeSet = d3.select("#sample-metadata");
+        var pokeSet = d3.select(`#${divmetadata}`);
         pokeSet.html("");
         
         Object.entries(data).forEach(function(Pokemon) {
             console.log(Pokemon);
             pokeSet.append("h5").text(Pokemon[1]["name"].toUpperCase() + "\n");
+            pokeSet.append("img").property["src"]=`/images/${id}.png`;
         });
     });
 }
@@ -86,15 +87,30 @@ function init() {
             }
         });
         dropdownMenu.append("option").text("-select-").property("value");
-        //  loop through to find if type exists, append
         pokeList.forEach(function(name) {
             dropdownMenu.append("option").text(name).property("value");
         });
-        // Binding event
         dropdownMenu.on("change",function(){
             console.log(this.value)
-            buildPlot(this.value)
-            plotInfo(this.value)
+            buildPlot(this.value,"bar","scatter")
+            plotInfo(this.value,"sample-metadata")
+        });
+    var dropdownMenu2 = d3.select("#selDataset2");
+        var pokeList2 = []
+        data.forEach(function(name) {
+            if (pokeList2.indexOf(name.name)<0) {
+                pokeList2.push(name.name)
+            }
+        });
+        dropdownMenu2.append("option").text("-select-").property("value");
+        pokeList2.forEach(function(name) {
+            dropdownMenu2.append("option").text(name).property("value");
+        });
+        // Binding event
+        dropdownMenu2.on("change",function(){
+            console.log(this.value)
+            buildPlot(this.value,"bar2","scatter2")
+            plotInfo(this.value,"sample-metadata2")
         });
     });
 }

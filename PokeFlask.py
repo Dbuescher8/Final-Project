@@ -57,7 +57,7 @@ def types():
 @app.route("/api/v1.0/bulbasaur")
 def bulbasaur():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'bulbasaur\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'bulbasaur\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -77,7 +77,7 @@ def bulbasaur():
 @app.route("/api/v1.0/ivysaur")
 def ivysaur():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ivysaur\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ivysaur\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -97,7 +97,7 @@ def ivysaur():
 @app.route("/api/v1.0/venusaur")
 def venusaur():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'venusaur\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'venusaur\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -117,7 +117,7 @@ def venusaur():
 @app.route("/api/v1.0/charmander")
 def charmander():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'charmander\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'charmander\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -137,7 +137,7 @@ def charmander():
 @app.route("/api/v1.0/charmeleon")
 def charmeleon():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'charmeleon\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'charmeleon\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -157,7 +157,7 @@ def charmeleon():
 @app.route("/api/v1.0/charizard")
 def charizard():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'charizard\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'charizard\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -177,7 +177,7 @@ def charizard():
 @app.route("/api/v1.0/squirtle")
 def squirtle():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'squirtle\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'squirtle\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -197,7 +197,7 @@ def squirtle():
 @app.route("/api/v1.0/wartortle")
 def wartortle():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'wartortle\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'wartortle\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -217,7 +217,7 @@ def wartortle():
 @app.route("/api/v1.0/blastoise")
 def blastoise():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'blastoise\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'blastoise\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -237,7 +237,7 @@ def blastoise():
 @app.route("/api/v1.0/caterpie")
 def caterpie():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'caterpie\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'caterpie\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -257,7 +257,7 @@ def caterpie():
 @app.route("/api/v1.0/metapod")
 def metapod():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'metapod\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'metapod\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -277,7 +277,7 @@ def metapod():
 @app.route("/api/v1.0/butterfree")
 def butterfree():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'butterfree\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'butterfree\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -297,7 +297,7 @@ def butterfree():
 @app.route("/api/v1.0/weedle")
 def weedle():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'weedle\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'weedle\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -317,7 +317,7 @@ def weedle():
 @app.route("/api/v1.0/kakuna")
 def kakuna():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kakuna\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kakuna\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -337,7 +337,7 @@ def kakuna():
 @app.route("/api/v1.0/beedrill")
 def beedrill():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'beedrill\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'beedrill\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -357,7 +357,7 @@ def beedrill():
 @app.route("/api/v1.0/pidgey")
 def pidgey():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pidgey\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pidgey\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -377,7 +377,7 @@ def pidgey():
 @app.route("/api/v1.0/pidgeotto")
 def pidgeotto():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pidgeotto\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pidgeotto\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -397,7 +397,7 @@ def pidgeotto():
 @app.route("/api/v1.0/pidgeot")
 def pidgeot():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pidgeot\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pidgeot\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -417,7 +417,7 @@ def pidgeot():
 @app.route("/api/v1.0/rattata")
 def rattata():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'rattata\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'rattata\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -437,7 +437,7 @@ def rattata():
 @app.route("/api/v1.0/raticate")
 def raticate():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'raticate\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'raticate\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -457,7 +457,7 @@ def raticate():
 @app.route("/api/v1.0/spearow")
 def spearow():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'spearow\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'spearow\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -477,7 +477,7 @@ def spearow():
 @app.route("/api/v1.0/fearow")
 def fearow():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'fearow\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'fearow\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -497,7 +497,7 @@ def fearow():
 @app.route("/api/v1.0/ekans")
 def ekans():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ekans\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ekans\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -517,7 +517,7 @@ def ekans():
 @app.route("/api/v1.0/arbok")
 def arbok():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'arbok\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'arbok\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -537,7 +537,7 @@ def arbok():
 @app.route("/api/v1.0/pikachu")
 def pikachu():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pikachu\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pikachu\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -557,7 +557,7 @@ def pikachu():
 @app.route("/api/v1.0/raichu")
 def raichu():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'raichu\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'raichu\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -577,7 +577,7 @@ def raichu():
 @app.route("/api/v1.0/sandshrew")
 def sandshrew():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'sandshrew\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'sandshrew\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -597,7 +597,7 @@ def sandshrew():
 @app.route("/api/v1.0/sandslash")
 def sandslash():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'sandslash\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'sandslash\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -617,7 +617,7 @@ def sandslash():
 @app.route("/api/v1.0/nidoran-f")
 def nidoranf():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidoran-f\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidoran-f\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -637,7 +637,7 @@ def nidoranf():
 @app.route("/api/v1.0/nidorina")
 def nidorina():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidorina\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidorina\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -657,7 +657,7 @@ def nidorina():
 @app.route("/api/v1.0/nidoqueen")
 def nidoqueen():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidoqueen\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidoqueen\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -677,7 +677,7 @@ def nidoqueen():
 @app.route("/api/v1.0/nidoran-m")
 def nidoranm():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidoran-m\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidoran-m\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -697,7 +697,7 @@ def nidoranm():
 @app.route("/api/v1.0/nidorino")
 def nidorino():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidorino\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidorino\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -717,7 +717,7 @@ def nidorino():
 @app.route("/api/v1.0/nidoking")
 def nidoking():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidoking\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'nidoking\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -737,7 +737,7 @@ def nidoking():
 @app.route("/api/v1.0/clefairy")
 def clefairy():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'clefairy\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'clefairy\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -757,7 +757,7 @@ def clefairy():
 @app.route("/api/v1.0/clefable")
 def clefable():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'clefable\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'clefable\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -777,7 +777,7 @@ def clefable():
 @app.route("/api/v1.0/vulpix")
 def vulpix():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'vulpix\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'vulpix\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -797,7 +797,7 @@ def vulpix():
 @app.route("/api/v1.0/ninetales")
 def ninetales():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ninetales\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ninetales\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -817,7 +817,7 @@ def ninetales():
 @app.route("/api/v1.0/jigglypuff")
 def jigglypuff():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'jigglypuff\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'jigglypuff\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -837,7 +837,7 @@ def jigglypuff():
 @app.route("/api/v1.0/wigglytuff")
 def wigglytuff():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'wigglytuff\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'wigglytuff\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -857,7 +857,7 @@ def wigglytuff():
 @app.route("/api/v1.0/zubat")
 def zubat():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'zubat\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'zubat\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -877,7 +877,7 @@ def zubat():
 @app.route("/api/v1.0/golbat")
 def golbat():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'golbat\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'golbat\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -897,7 +897,7 @@ def golbat():
 @app.route("/api/v1.0/oddish")
 def oddish():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'oddish\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'oddish\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -917,7 +917,7 @@ def oddish():
 @app.route("/api/v1.0/gloom")
 def gloom():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'gloom\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'gloom\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -937,7 +937,7 @@ def gloom():
 @app.route("/api/v1.0/vileplume")
 def vileplume():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'vileplume\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'vileplume\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -957,7 +957,7 @@ def vileplume():
 @app.route("/api/v1.0/paras")
 def paras():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'paras\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'paras\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -977,7 +977,7 @@ def paras():
 @app.route("/api/v1.0/parasect")
 def parasect():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'parasect\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'parasect\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -997,7 +997,7 @@ def parasect():
 @app.route("/api/v1.0/venonat")
 def venonat():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'venonat\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'venonat\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1017,7 +1017,7 @@ def venonat():
 @app.route("/api/v1.0/venomoth")
 def venomoth():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'venomoth\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'venomoth\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1037,7 +1037,7 @@ def venomoth():
 @app.route("/api/v1.0/diglett")
 def diglett():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'diglett\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'diglett\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1057,7 +1057,7 @@ def diglett():
 @app.route("/api/v1.0/dugtrio")
 def dugtrio():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dugtrio\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dugtrio\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1077,7 +1077,7 @@ def dugtrio():
 @app.route("/api/v1.0/meowth")
 def meowth():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'meowth\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'meowth\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1097,7 +1097,7 @@ def meowth():
 @app.route("/api/v1.0/persian")
 def persian():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'persian\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'persian\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1117,7 +1117,7 @@ def persian():
 @app.route("/api/v1.0/psyduck")
 def psyduck():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'psyduck\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'psyduck\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1137,7 +1137,7 @@ def psyduck():
 @app.route("/api/v1.0/golduck")
 def golduck():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'golduck\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'golduck\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1157,7 +1157,7 @@ def golduck():
 @app.route("/api/v1.0/mankey")
 def mankey():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'mankey\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'mankey\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1177,7 +1177,7 @@ def mankey():
 @app.route("/api/v1.0/primeape")
 def primeape():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'primeape\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'primeape\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1197,7 +1197,7 @@ def primeape():
 @app.route("/api/v1.0/growlithe")
 def growlithe():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'growlithe\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'growlithe\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1217,7 +1217,7 @@ def growlithe():
 @app.route("/api/v1.0/arcanine")
 def arcanine():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'arcanine\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'arcanine\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1237,7 +1237,7 @@ def arcanine():
 @app.route("/api/v1.0/poliwag")
 def poliwag():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'poliwag\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'poliwag\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1257,7 +1257,7 @@ def poliwag():
 @app.route("/api/v1.0/poliwhirl")
 def poliwhirl():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'poliwhirl\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'poliwhirl\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1277,7 +1277,7 @@ def poliwhirl():
 @app.route("/api/v1.0/poliwrath")
 def poliwrath():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'poliwrath\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'poliwrath\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1297,7 +1297,7 @@ def poliwrath():
 @app.route("/api/v1.0/abra")
 def abra():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'abra\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'abra\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1317,7 +1317,7 @@ def abra():
 @app.route("/api/v1.0/kadabra")
 def kadabra():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kadabra\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kadabra\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1337,7 +1337,7 @@ def kadabra():
 @app.route("/api/v1.0/alakazam")
 def alakazam():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'alakazam\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'alakazam\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1357,7 +1357,7 @@ def alakazam():
 @app.route("/api/v1.0/machop")
 def machop():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'machop\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'machop\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1377,7 +1377,7 @@ def machop():
 @app.route("/api/v1.0/machoke")
 def machoke():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'machoke\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'machoke\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1397,7 +1397,7 @@ def machoke():
 @app.route("/api/v1.0/machamp")
 def machamp():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'machamp\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'machamp\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1417,7 +1417,7 @@ def machamp():
 @app.route("/api/v1.0/bellsprout")
 def bellsprout():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'bellsprout\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'bellsprout\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1437,7 +1437,7 @@ def bellsprout():
 @app.route("/api/v1.0/weepinbell")
 def weepinbell():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'weepinbell\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'weepinbell\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1457,7 +1457,7 @@ def weepinbell():
 @app.route("/api/v1.0/victreebel")
 def victreebel():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'victreebel\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'victreebel\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1477,7 +1477,7 @@ def victreebel():
 @app.route("/api/v1.0/tentacool")
 def tentacool():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'tentacool\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'tentacool\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1497,7 +1497,7 @@ def tentacool():
 @app.route("/api/v1.0/tentacruel")
 def tentacruel():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'tentacruel\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'tentacruel\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1517,7 +1517,7 @@ def tentacruel():
 @app.route("/api/v1.0/geodude")
 def geodude():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'geodude\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'geodude\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1537,7 +1537,7 @@ def geodude():
 @app.route("/api/v1.0/graveler")
 def graveler():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'graveler\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'graveler\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1557,7 +1557,7 @@ def graveler():
 @app.route("/api/v1.0/golem")
 def golem():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'golem\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'golem\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1577,7 +1577,7 @@ def golem():
 @app.route("/api/v1.0/ponyta")
 def ponyta():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ponyta\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ponyta\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1597,7 +1597,7 @@ def ponyta():
 @app.route("/api/v1.0/rapidash")
 def rapidash():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'rapidash\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'rapidash\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1617,7 +1617,7 @@ def rapidash():
 @app.route("/api/v1.0/slowpoke")
 def slowpoke():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'slowpoke\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'slowpoke\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1637,7 +1637,7 @@ def slowpoke():
 @app.route("/api/v1.0/slowbro")
 def slowbro():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'slowbro\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'slowbro\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1657,7 +1657,7 @@ def slowbro():
 @app.route("/api/v1.0/magnemite")
 def magnemite():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'magnemite\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'magnemite\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1677,7 +1677,7 @@ def magnemite():
 @app.route("/api/v1.0/magneton")
 def magneton():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'magneton\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'magneton\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1697,7 +1697,7 @@ def magneton():
 @app.route("/api/v1.0/farfetchd")
 def farfetchd():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'farfetchd\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'farfetchd\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1717,7 +1717,7 @@ def farfetchd():
 @app.route("/api/v1.0/doduo")
 def doduo():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'doduo\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'doduo\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1737,7 +1737,7 @@ def doduo():
 @app.route("/api/v1.0/dodrio")
 def dodrio():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dodrio\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dodrio\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1757,7 +1757,7 @@ def dodrio():
 @app.route("/api/v1.0/seel")
 def seel():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'seel\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'seel\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1777,7 +1777,7 @@ def seel():
 @app.route("/api/v1.0/dewgong")
 def dewgong():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dewgong\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dewgong\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1797,7 +1797,7 @@ def dewgong():
 @app.route("/api/v1.0/grimer")
 def grimer():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'grimer\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'grimer\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1817,7 +1817,7 @@ def grimer():
 @app.route("/api/v1.0/muk")
 def muk():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'muk\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'muk\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1837,7 +1837,7 @@ def muk():
 @app.route("/api/v1.0/shellder")
 def shellder():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'shellder\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'shellder\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1857,7 +1857,7 @@ def shellder():
 @app.route("/api/v1.0/cloyster")
 def cloyster():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'cloyster\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'cloyster\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1877,7 +1877,7 @@ def cloyster():
 @app.route("/api/v1.0/gastly")
 def gastly():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'gastly\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'gastly\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1897,7 +1897,7 @@ def gastly():
 @app.route("/api/v1.0/haunter")
 def haunter():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'haunter\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'haunter\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1917,7 +1917,7 @@ def haunter():
 @app.route("/api/v1.0/gengar")
 def gengar():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'gengar\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'gengar\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1937,7 +1937,7 @@ def gengar():
 @app.route("/api/v1.0/onix")
 def onix():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'onix\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'onix\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1957,7 +1957,7 @@ def onix():
 @app.route("/api/v1.0/drowzee")
 def drowzee():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'drowzee\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'drowzee\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1977,7 +1977,7 @@ def drowzee():
 @app.route("/api/v1.0/hypno")
 def hypno():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'hypno\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'hypno\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -1997,7 +1997,7 @@ def hypno():
 @app.route("/api/v1.0/krabby")
 def krabby():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'krabby\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'krabby\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2017,7 +2017,7 @@ def krabby():
 @app.route("/api/v1.0/kingler")
 def kingler():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kingler\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kingler\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2037,7 +2037,7 @@ def kingler():
 @app.route("/api/v1.0/voltorb")
 def voltorb():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'voltorb\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'voltorb\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2057,7 +2057,7 @@ def voltorb():
 @app.route("/api/v1.0/electrode")
 def electrode():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'electrode\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'electrode\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2077,7 +2077,7 @@ def electrode():
 @app.route("/api/v1.0/exeggcute")
 def exeggcute():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'exeggcute\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'exeggcute\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2097,7 +2097,7 @@ def exeggcute():
 @app.route("/api/v1.0/exeggutor")
 def exeggutor():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'exeggutor\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'exeggutor\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2117,7 +2117,7 @@ def exeggutor():
 @app.route("/api/v1.0/cubone")
 def cubone():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'cubone\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'cubone\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2137,7 +2137,7 @@ def cubone():
 @app.route("/api/v1.0/marowak")
 def marowak():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'marowak\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'marowak\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2157,7 +2157,7 @@ def marowak():
 @app.route("/api/v1.0/hitmonlee")
 def hitmonlee():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'hitmonlee\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'hitmonlee\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2177,7 +2177,7 @@ def hitmonlee():
 @app.route("/api/v1.0/hitmonchan")
 def hitmonchan():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'hitmonchan\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'hitmonchan\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2197,7 +2197,7 @@ def hitmonchan():
 @app.route("/api/v1.0/lickitung")
 def lickitung():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'lickitung\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'lickitung\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2217,7 +2217,7 @@ def lickitung():
 @app.route("/api/v1.0/koffing")
 def koffing():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'koffing\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'koffing\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2237,7 +2237,7 @@ def koffing():
 @app.route("/api/v1.0/weezing")
 def weezing():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'weezing\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'weezing\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2257,7 +2257,7 @@ def weezing():
 @app.route("/api/v1.0/rhyhorn")
 def rhyhorn():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'rhyhorn\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'rhyhorn\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2277,7 +2277,7 @@ def rhyhorn():
 @app.route("/api/v1.0/rhydon")
 def rhydon():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'rhydon\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'rhydon\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2297,7 +2297,7 @@ def rhydon():
 @app.route("/api/v1.0/chansey")
 def chansey():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'chansey\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'chansey\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2317,7 +2317,7 @@ def chansey():
 @app.route("/api/v1.0/tangela")
 def tangela():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'tangela\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'tangela\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2337,7 +2337,7 @@ def tangela():
 @app.route("/api/v1.0/kangaskhan")
 def kangaskhan():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kangaskhan\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kangaskhan\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2357,7 +2357,7 @@ def kangaskhan():
 @app.route("/api/v1.0/horsea")
 def horsea():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'horsea\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'horsea\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2377,7 +2377,7 @@ def horsea():
 @app.route("/api/v1.0/seadra")
 def seadra():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'seadra\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'seadra\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2397,7 +2397,7 @@ def seadra():
 @app.route("/api/v1.0/goldeen")
 def goldeen():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'goldeen\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'goldeen\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2417,7 +2417,7 @@ def goldeen():
 @app.route("/api/v1.0/seaking")
 def seaking():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'seaking\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'seaking\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2437,7 +2437,7 @@ def seaking():
 @app.route("/api/v1.0/staryu")
 def staryu():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'staryu\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'staryu\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2457,7 +2457,7 @@ def staryu():
 @app.route("/api/v1.0/starmie")
 def starmie():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'starmie\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'starmie\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2477,7 +2477,7 @@ def starmie():
 @app.route("/api/v1.0/mr-mime")
 def mrmime():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'mr-mime\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'mr-mime\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2497,7 +2497,7 @@ def mrmime():
 @app.route("/api/v1.0/scyther")
 def scyther():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'scyther\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'scyther\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2517,7 +2517,7 @@ def scyther():
 @app.route("/api/v1.0/jynx")
 def jynx():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'jynx\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'jynx\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2537,7 +2537,7 @@ def jynx():
 @app.route("/api/v1.0/electabuzz")
 def electabuzz():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'electabuzz\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'electabuzz\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2557,7 +2557,7 @@ def electabuzz():
 @app.route("/api/v1.0/magmar")
 def magmar():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'magmar\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'magmar\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2577,7 +2577,7 @@ def magmar():
 @app.route("/api/v1.0/pinsir")
 def pinsir():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pinsir\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'pinsir\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2597,7 +2597,7 @@ def pinsir():
 @app.route("/api/v1.0/tauros")
 def tauros():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'tauros\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'tauros\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2617,7 +2617,7 @@ def tauros():
 @app.route("/api/v1.0/magikarp")
 def magikarp():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'magikarp\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'magikarp\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2637,7 +2637,7 @@ def magikarp():
 @app.route("/api/v1.0/gyarados")
 def gyarados():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'gyarados\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'gyarados\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2657,7 +2657,7 @@ def gyarados():
 @app.route("/api/v1.0/lapras")
 def lapras():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'lapras\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'lapras\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2677,7 +2677,7 @@ def lapras():
 @app.route("/api/v1.0/ditto")
 def ditto():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ditto\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'ditto\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2697,7 +2697,7 @@ def ditto():
 @app.route("/api/v1.0/eevee")
 def eevee():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'eevee\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'eevee\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2717,7 +2717,7 @@ def eevee():
 @app.route("/api/v1.0/vaporeon")
 def vaporeon():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'vaporeon\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'vaporeon\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2737,7 +2737,7 @@ def vaporeon():
 @app.route("/api/v1.0/jolteon")
 def jolteon():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'jolteon\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'jolteon\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2757,7 +2757,7 @@ def jolteon():
 @app.route("/api/v1.0/flareon")
 def flareon():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'flareon\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'flareon\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2777,7 +2777,7 @@ def flareon():
 @app.route("/api/v1.0/porygon")
 def porygon():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'porygon\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'porygon\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2797,7 +2797,7 @@ def porygon():
 @app.route("/api/v1.0/omanyte")
 def omanyte():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'omanyte\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'omanyte\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2817,7 +2817,7 @@ def omanyte():
 @app.route("/api/v1.0/omastar")
 def omastar():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'omastar\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'omastar\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2837,7 +2837,7 @@ def omastar():
 @app.route("/api/v1.0/kabuto")
 def kabuto():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kabuto\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kabuto\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2857,7 +2857,7 @@ def kabuto():
 @app.route("/api/v1.0/kabutops")
 def kabutops():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kabutops\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'kabutops\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2877,7 +2877,7 @@ def kabutops():
 @app.route("/api/v1.0/aerodactyl")
 def aerodactyl():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'aerodactyl\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'aerodactyl\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2897,7 +2897,7 @@ def aerodactyl():
 @app.route("/api/v1.0/snorlax")
 def snorlax():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'snorlax\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'snorlax\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2917,7 +2917,7 @@ def snorlax():
 @app.route("/api/v1.0/articuno")
 def articuno():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'articuno\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'articuno\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2937,7 +2937,7 @@ def articuno():
 @app.route("/api/v1.0/zapdos")
 def zapdos():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'zapdos\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'zapdos\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2957,7 +2957,7 @@ def zapdos():
 @app.route("/api/v1.0/moltres")
 def moltres():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'moltres\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'moltres\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2977,7 +2977,7 @@ def moltres():
 @app.route("/api/v1.0/dratini")
 def dratini():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dratini\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dratini\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -2997,7 +2997,7 @@ def dratini():
 @app.route("/api/v1.0/dragonair")
 def dragonair():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dragonair\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dragonair\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -3017,7 +3017,7 @@ def dragonair():
 @app.route("/api/v1.0/dragonite")
 def dragonite():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dragonite\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'dragonite\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -3037,7 +3037,7 @@ def dragonite():
 @app.route("/api/v1.0/mewtwo")
 def mewtwo():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'mewtwo\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'mewtwo\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
@@ -3057,7 +3057,7 @@ def mewtwo():
 @app.route("/api/v1.0/mew")
 def mew():
     
-    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'mew\'')
+    results = engine.execute('SELECT * FROM gen1_data WHERE "name" = \'mew\' ORDER BY "name"')
 
     all_pokemon = []
     for name, pokeType, hp, attack, defense, specialAttack, specialDefense, speed in results:
