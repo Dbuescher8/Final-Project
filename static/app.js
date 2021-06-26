@@ -113,7 +113,21 @@ function init() {
             plotInfo(this.value,"sample-metadata2")
         });
     });
+    var fightButton = d3.select("#battle");
+    fightButton.on("click",function() {
+        var pokemon1 = d3.select("#dropdownMenu").value;
+        var pokemon2 = d3.select("#dropdownMenu2").value;
+        d3.json("/api/v1.0/battle/" + pokemon1 + "/" + pokemon2).then((data)=>{
+            console.log(data)
+        });
+    });
 }
+
+// Add button that calls route and pass 2 pokemon to it - Translates 1/0 to W/L
+// Replace battle api json result with machine learning prediction
+// Insert table for selected pokemon stats upon dropdown selection
+// Format charts to show selected pokemon on same chart for each stat
+
 
 init();
 

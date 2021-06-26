@@ -1,4 +1,4 @@
-Name,Type,HP,Attack,Defense,Special Attack,Special Defense,Speed,varATT,varDEF,Avg,vs.,Score,W/L
+Name,Type,HP,Attack,Defense,Special Attack,Special Defense,Speed,varATT,varDEF,Avg,vs,Score,W/L
 abra,psychic,25,20,15,105,55,90,95,42.5,68.75,pidgey,1.75,1
 aerodactyl,rock,80,105,65,60,75,130,167.5,102.5,135,pinsir,-19.375,0
 alakazam,psychic,55,50,45,135,95,120,147.5,92.5,120,articuno,-38.125,0

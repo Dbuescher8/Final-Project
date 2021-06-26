@@ -39,6 +39,35 @@ def welcome():
 
     )
 
+# New route taking two parameters for battle - this is where our Machine Learning code will go 
+@app.route("/api/v1.0/battle/<pokemon1>/<pokemon2>")
+def battle(pokemon1,pokemon2):
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import pandas as pd
+    from sklearn.linear_model import LinearRegression
+    import requests
+    import json
+    import random
+    from pprint import pprint
+    filePath2 = "testingDF_results.csv"
+    poke_df = pd.read_csv(filePath2)
+    # results = engine.execute('SELECT * FROM gen1_data')
+    # poke_df = pd.DataFrame(results)
+    X = poke_df[["HP", "Attack", "Defense", "Special Attack", "Special Defense", "Speed"]]
+    y = poke_df["W/L"].values.reshape(-1)
+    print(f"Labels: {y[:10]}")
+    print(f"Data: {X[:10]}")
+    from sklearn.model_selection import train_test_split
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+    from sklearn.linear_model import LogisticRegression
+    classifier = LogisticRegression()
+    classifier.fit(X_train, y_train)
+    print(f"Training Data Score: {classifier.score(X_train, y_train)}")
+    print(f"Testing Data Score: {classifier.score(X_test, y_test)}")
+
+    return jsonify({"W/L": 1})
+
 
 @app.route("/api/v1.0/pokemon")
 def types():
