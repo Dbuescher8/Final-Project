@@ -130,4 +130,3 @@ let animation = anime({
     delay: anime.stagger(100, {start: 1000}), 
     translateX: [-10, 30]
   });                
-  
