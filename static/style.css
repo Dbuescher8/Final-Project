@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
-  font-family:'Times New Roman', Times, serif
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  font-variant: inherit;
 }
 
 .navbar-brand 
