@@ -9,12 +9,13 @@
 }
 h3 {
     text-align: center;
+    justify-content: center;
     
 }
 
 h5 {
     text-align: center;
-    
+    justify-content: center;
 }
 .container{
     background-color:whitesmoke;
@@ -24,7 +25,8 @@ h5 {
     position: relative;
 }   
 body {
-    background-color: lightgray;
+    background-color: whitesmoke;
+    justify-content: center;
        }
 h1 {
     text-align: center;
