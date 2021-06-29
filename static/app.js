@@ -129,10 +129,7 @@ function init() {
     });
 }
 
-// Add button that calls route and pass 2 pokemon to it - Translates 1/0 to W/L
-// Replace battle api json result with machine learning prediction
 // Insert table for selected pokemon stats upon dropdown selection
-// Insert picture for each selected pokemon
 // Format charts to show selected pokemon on same chart for each stat
 
 
